@@ -91,7 +91,7 @@ export const login = async (req, res) => {
         if (!isPasswordValid) {
             return res.status(400).json({ success: false, message: "Invalid username or password!" })
         }
-
+//genrating token and setting it to cookies
         generateTokenAndSetCookie(res, user._id)
 
         user.lastLogin = new Date()
