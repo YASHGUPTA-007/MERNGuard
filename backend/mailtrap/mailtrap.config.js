@@ -9,6 +9,8 @@ export const client = new MailtrapClient({
     token: TOKEN,
 });
 
+console.log(TOKEN)
+
 export const sender = {
     email: "hello@demomailtrap.co",
     name: "Mern Auth",
