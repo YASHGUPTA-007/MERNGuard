@@ -32,7 +32,7 @@ export const sendWelcomeEmail = async (email, name) => {
   const recipient = [{ email }];
 
   try {
-    const response = await mailtrapclient
+    const response = await mailtrapClient
      .send({
         from: sender,
         to: recipient,
