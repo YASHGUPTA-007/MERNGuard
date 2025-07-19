@@ -4,7 +4,9 @@
   "description": "��#\u0000 \u0000a\u0000u\u0000t\u0000h\u0000\r\u0000 \u0000",
   "main": "backend/.js",
   "scripts": {
-    "dev": "nodemon backend/index.js"
+    "dev": "NODE_ENV=development nodemon backend/index.js",
+  "start": "NODE_ENV=production node backend/index.js",
+    "build":"npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": [],
   "author": "",
